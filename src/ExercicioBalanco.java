@@ -1,31 +1,35 @@
 
 public class ExercicioBalanco {
+	
+	int totalReceitas, totalDespesas;
 
 	public ExercicioBalanco() {
-
-			System.out.println("Ola turma!");
 				
-			//Cacula receitas
+			calcularReceitas();
+			cacularDespesas();
 				
-			int quotas 		= 300,
-				recBaile 	= 200,
-				recBar 	 	= 250;
-				
-			int totalReceitas = quotas + recBaile + recBar;
-				
-				System.out.println("Receitas: " + totalReceitas  + "€");
-				
-			//Cacula despesas
-				
-			int luz			= 80,
-				agua		= 60,
-				telefone	= 70;
-				
-			int totalDespesas =  luz + agua + telefone;
-				
+			System.out.println("Receitas: " + totalReceitas  + "€");		
 			System.out.println("Despesas: " + totalDespesas + "€");
-				
 			System.out.println("\nBalanço: " + (totalReceitas - totalDespesas)  + "€");
+			
+	}
+	
+	public void calcularReceitas(){
+		
+		int quotas 		= 300,
+			recBaile 	= 200,
+			recBar 	 	= 250;
+				
+		totalReceitas = quotas + recBaile + recBar;
+		
+	}
+	
+	public void cacularDespesas(){
+		int luz			= 80,
+			agua		= 60,
+			telefone	= 70;
+				
+		totalDespesas =  luz + agua + telefone;
 	}
 
 }
