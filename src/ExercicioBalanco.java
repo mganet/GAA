@@ -25,6 +25,7 @@ public class ExercicioBalanco {
 	}
 	
 	public void cacularDespesas(){
+		
 		int luz			= 80,
 			agua		= 60,
 			telefone	= 70;
