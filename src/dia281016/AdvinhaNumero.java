@@ -11,13 +11,20 @@ public class AdvinhaNumero {
 	public AdvinhaNumero() {
 		
 		Random r = new Random();
+		int tentativas = 0;
 		
 		escondido = r.nextInt(VALORMAX);
-
-		if(escondido == tentarAdivinhar()) {
-			System.out.print("\nADIVINHASTE PA");
-		}else {
-			System.out.print("\nERROU");
+		
+		
+		while(tentativas < 3)
+		{
+			if(escondido == tentarAdivinhar()) {
+				System.out.print("\nADIVINHASTE PA");
+				tentativas = 3;
+			}else {
+				tentativas++;
+				System.out.print("\nERROU");
+			}
 		}
 		
 	}
