@@ -15,17 +15,22 @@ public class AdvinhaNumero {
 		
 		escondido = r.nextInt(VALORMAX);
 		
+		System.out.println(escondido);
 		
-		while(tentativas < 3)
+		do
 		{
 			if(escondido == tentarAdivinhar()) {
 				System.out.print("\nADIVINHASTE PA");
 				tentativas = 3;
-			}else {
+			}else if(escondido > tentarAdivinhar()){
 				tentativas++;
-				System.out.print("\nERROU");
+				System.out.print("\nO número é maior\n");
+			}else{
+				tentativas++;
+				System.out.print("\nO número é menor\n");
 			}
 		}
+		while(tentativas < 3);
 		
 	}
 	
