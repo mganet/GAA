@@ -10,7 +10,15 @@ public class BalancoGAA {
 		
 		int balanco = calcularBalanco(receitas(), despesas());
 
-		System.out.println("\nBalanço: " + balanco  + "€");
+		System.out.println("\nBalanço: " + balanco  + "€\n");
+		
+		if(balanco > 0){
+			System.out.println("Balanço positivo");
+		} else if(balanco == 0){
+			System.out.println("Balanço neutro");
+		} else{
+			System.out.println("Balanço negativo");
+		}
 		
 	}
 	

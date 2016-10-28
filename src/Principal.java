@@ -1,6 +1,6 @@
 import dia281016.CalculadoraSimples;
 import dia281016.BalancoGAA;
-
+import dia281016.AdvinhaNumero;
 
 public class Principal {
 
@@ -13,7 +13,8 @@ public class Principal {
 		//new ExercicioBalanco();
 		//new InputOutputBasic();
 		//new CalculadoraSimples();
-		new BalancoGAA();
+		//new BalancoGAA();
+		new AdvinhaNumero();
 		
 	}
 
