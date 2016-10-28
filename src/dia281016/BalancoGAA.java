@@ -3,29 +3,23 @@ package dia281016;
 import java.util.Scanner;;
 
 public class BalancoGAA {
-
-	int totalReceitas, totalDespesas;
 	
 	Scanner in  = new Scanner(System.in);
 	
 	public BalancoGAA() {
 		
-		receita();
-		despesas();
-		
-		System.out.println("\nReceitas: " + totalReceitas  + "€");		
-		System.out.println("Despesas: " + totalDespesas + "€");
-		System.out.println("\nBalanço: " + (totalReceitas - totalDespesas)  + "€");
+		int balanco = calcularBalanco(receitas(), despesas());
+
+		System.out.println("\nBalanço: " + balanco  + "€");
 		
 	}
 	
 	
-	public void receita(){
+	public int receitas(){
 		
 		int quotas, recBaile, recBar;
 		
 		System.out.println("Insira as despesas\n");
-		
 		System.out.print("Quotas: ");
 		quotas	 = in.nextInt();
 		
@@ -35,11 +29,11 @@ public class BalancoGAA {
 		System.out.print("Bar: ");
 		recBar	 = in.nextInt();
 		
-		totalReceitas = quotas + recBaile + recBar;
+		return quotas + recBaile + recBar;
 		
 	}
 	
-	public void despesas(){
+	public int despesas(){
 		
 		int agua, luz, telefone;
 		
@@ -54,9 +48,12 @@ public class BalancoGAA {
 		System.out.print("Telefone: ");
 		telefone = in.nextInt();
 		
-		totalDespesas =  luz + agua + telefone;
+		return luz + agua + telefone;
 		
-		
+	}
+	
+	public int calcularBalanco(int receita, int despesa){
+		return receita - despesa;
 	}
 
 }
