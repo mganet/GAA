@@ -31,6 +31,7 @@ public class ExercicioBalanco {
 			telefone	= 70;
 				
 		totalDespesas =  luz + agua + telefone;
+		
 	}
 
 }

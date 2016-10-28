@@ -1,3 +1,6 @@
+import dia281016.CalculadoraSimples;
+import dia281016.BalancoGAA;
+
 
 public class Principal {
 
@@ -7,7 +10,10 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		new ExercicioBalanco();
+		//new ExercicioBalanco();
+		//new InputOutputBasic();
+		//new CalculadoraSimples();
+		new BalancoGAA();
 		
 	}
 
