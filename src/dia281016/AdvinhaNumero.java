@@ -12,17 +12,17 @@ public class AdvinhaNumero {
 		
 		Random r = new Random();
 		int tentativas = 0;
+		int num;
 		
 		escondido = r.nextInt(VALORMAX);
 		
-		System.out.println(escondido);
-		
-		do
+		while(tentativas < 3)
 		{
-			if(escondido == tentarAdivinhar()) {
+			num = tentarAdivinhar();
+			if(escondido == num) {
 				System.out.print("\nADIVINHASTE PA");
 				tentativas = 3;
-			}else if(escondido > tentarAdivinhar()){
+			}else if(escondido > num){
 				tentativas++;
 				System.out.print("\nO número é maior\n");
 			}else{
@@ -30,7 +30,6 @@ public class AdvinhaNumero {
 				System.out.print("\nO número é menor\n");
 			}
 		}
-		while(tentativas < 3);
 		
 	}
 	
