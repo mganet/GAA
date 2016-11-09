@@ -65,7 +65,7 @@ public class Exercicios {
 	/*
 	 * Pede ao utilizador a quantidade de números x que deseja introduzir [MAXIMO ATÉ 50]
 	 * Pede x vezes números ao utlizador (sem repetir, não precisa de fazer um check se ja repetiu, fica por conciencia do utilizador),
-	 * compara os números entre si e ordena-los de forma ascendente sem usar funções JAVA apenas usando logica.
+	 * compara os números entre si e ordena-los de forma ascendente sem usar funções especificas para isso JAVA apenas usando logica.
 	 * Mosta ao utilizador os números ordenados
 	 */
 	
