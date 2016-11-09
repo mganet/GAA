@@ -6,9 +6,10 @@ public class ExerciciosArrays {
 
 	public ExerciciosArrays() {
 		
-		int escolha, soma, avgGol, avgSofridos, avgMarcados;
+		int escolha;
+		double avgGol, avgSofridos, avgMarcados, soma;
 		
-		int[][] liga = new int[9][2];
+		double[][] liga = new double[9][2];
 		
 		liga[0][0] = 2;
 		liga[0][1] = 1;
@@ -48,21 +49,24 @@ public class ExerciciosArrays {
 			for(int i = 0; i < 9; i++) {
 				soma += liga[i][0] + liga[i][1];
 			}
-			System.out.print("Média de golos por jogos: " + soma/9);
+			avgGol = soma/9;
+			System.out.print("Média de golos por jogos: " + avgGol);
 			break;
 		case 2 :
 			soma = 0;
 			for(int i = 0; i < 9; i++) {
 				soma += liga[i][0];
 			}
-			System.out.print("Média de golos marcados em casa por jogos: " + soma/9);
+			avgSofridos = soma/9;
+			System.out.print("Média de golos marcados em casa por jogos: " + avgSofridos);
 			break;
 		case 3 :
 			soma = 0;
 			for(int i = 0; i < 9; i++) {
 				soma += liga[i][1];
 			}
-			System.out.print("Média de golos sofridos em casa por jogos: " + soma/9);
+			avgMarcados = soma/9;
+			System.out.print("Média de golos sofridos em casa por jogos: " + avgMarcados);
 			break;
 		default :
 			System.out.print("ERRO");
