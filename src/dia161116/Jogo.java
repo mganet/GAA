@@ -4,7 +4,7 @@ import dia161116.Jogador;
 
 public class Jogo {
 
-	public Carta baralho[]; 
+	public baralho[]; 
 	protected Jogador jogadores[]; 
 	
 	public void distribuirPontuacao() {
